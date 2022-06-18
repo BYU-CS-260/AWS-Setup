@@ -25,7 +25,22 @@ In this learning activity, you will set up your Amazon AWS account and then will
 ![](images/properties.png)
 11. Select edit on the "Static website hosting" pane and type in "index.html" as the default page to display from your bucket.
 ![](images/staticwebsite.png)
-12. Congratulations! You now have your own website configured.  All you have to do is upload html pages to this S3 bucket and they will be served at the URL shown for your S3 bucket.  You can see the URL for the bucket at the bottom of the "Static website hosting" pane.  You can put this into the URL bar of your web browser and you will be able to see the web pages you have uploaded.
+11. Now you can add a bucket policy to grant public read access to your bucket. When you grant public read access, anyone on the internet can access your bucket.  Edit the "Bucket Policy" in the "permissions" tab to have the following content. Replace YOURBUCKETNAME with the name of your bucket.
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::YOURBUCKETNAME/*"
+        }
+    ]
+}
+```
+13. Congratulations! You now have your own website configured.  All you have to do is upload html pages to this S3 bucket and they will be served at the URL shown for your S3 bucket.  You can see the URL for the bucket at the bottom of the "Static website hosting" pane.  You can put this into the URL bar of your web browser and you will be able to see the web pages you have uploaded.
 ![](images/url.png)
 14. Now go back to your S3 bucket name and upload the index.html file you created and displayed in your Docker web server.  You should be able to see this page at the URL shown in your "Static website hosting" pane.
-16. If you have trouble or want to know more about S3 bucket hosting, this [tutorial](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) should go through the same steps in a different way.
+16. If you have trouble or want to know more about S3 bucket hosting, this [tutorial]([https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html)) should go through the same steps in a different way.
