@@ -1,4 +1,4 @@
-# S3-AWS
+# AWS Setup
 Now that you can see the files that your docker web server is serving in your web browser, you want other people throughout the world (like your Mom) to be able to see them too.  In order to do this, we will be using a cloud based web server to serve your files.  
 
 Amazon Web Services (AWS) provides a cloud based web server through their [S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html).  
