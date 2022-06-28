@@ -1,3 +1,5 @@
+During this class, you will be developing web applications that people throughout the world (like your Mom) to be able to see.  In order to do this, we will be using a cloud based web server to serve your applications.  First you will set up your AWS account, then you will create a web server through Cloud9.  Use the following tutorial to set things up.
+1. [Set up your AWS account](a
 
 6. Now you want to create a web server with Cloud9 so that your Mom can see your amazing web pages. [Sign into the AWS console](https://signin.aws.amazon.com/) as the Root User.  
 ![](images/root.png)  
