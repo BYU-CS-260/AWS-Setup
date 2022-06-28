@@ -19,7 +19,7 @@ In this learning activity, you will set up your Amazon AWS account and then will
 7. Then search for "Cloud9" in the upper left search bar.  
 ![](images/cloud9.png)  
 8. Create a Cloud9 environment
-![](images/createnv.png)
+![](images/createenv.png)
 9. Give your environment a name (pick whatever you want, but make it meaningful).
 ![](images/nameenv.png)
 10. Configure the Cost-saving settings so that the web server will never hibernate.
