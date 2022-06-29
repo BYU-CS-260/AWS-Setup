@@ -13,4 +13,6 @@ Now you want to create a web server with Cloud9 so that your Mom can see your am
 ![](images/docreate.png)
 12. You should now be able to see your Cloud9 window.  On the left pane is your directory or folder browser, in the center is your editor and on the bottom you will see a command line interface that will allow you to type commands for your server.
 ![](images/cloud9screen.png)
-13. We will be using the command line to configure your Cloud9 instance as a web server.
+13. We will be using the command line to configure your Cloud9 instance as a web server.  But this will be covered in a later tutorial.
+
+[Next Tutorial](firewall.md)
