@@ -1,4 +1,4 @@
-#Setting Up Your Firewall
+# Setting Up Your Firewall
 
 Now that you have your Cloud9 instance running, you need to configure it as a web server.  
 You have access to a full Linux machine and you can install and run software on this server.
