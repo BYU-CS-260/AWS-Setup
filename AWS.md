@@ -12,3 +12,5 @@ In this learning activity, you will set up your Amazon AWS account.
 ![](images/congrats.png)  
 5. You should get an email from amazon with links to training materials and information on how to get started.  Make sure the email doesn't end up in your SPAM folder.  You will want to be able to receive emails from Amazon in the future.  
 ![](images/email.png)  
+
+[Next Tutorial](cloud9.md)
