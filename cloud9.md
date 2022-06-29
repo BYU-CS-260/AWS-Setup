@@ -1,3 +1,4 @@
+# Setting Up Cloud9
 Now you want to create a web server with Cloud9 so that your Mom can see your amazing web pages. In this tutorial, we will show you how to create a Cloud9 instance, in the next one we will show you how to configure your Cloud9 instance as a web sever.
 1. [Sign into the AWS console](https://signin.aws.amazon.com/) as the Root User.  
 ![](images/root.png)  
