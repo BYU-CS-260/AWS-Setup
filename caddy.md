@@ -1,3 +1,4 @@
+# Setting up Caddy
 In this tutorial we will set up [Caddy](https://caddyserver.com/), a web server that will answer requests from web browsers.  
 We will provide you with minimal instructions on how to use these systems so you arent confused, but 
 you are welcome to explore more of the features on your own if you have time.
