@@ -4,9 +4,6 @@ We will be teaching you some basic systems administration commands and will be b
 enough command line tools to allow you to be successful. 
 
 First you will open port 80 in the firewall to allow web browsers to connect to your server.  A firewall keeps anyone from connecting to your machine on ports that you havent secured.  This protects your machine from hackers.
-Then we will set up Caddy, a web server that will answer requests from web browsers.  
-We will provide you with minimal instructions on how to use these systems so you arent confused, but 
-you are welcome to explore more of the features on your own if you have time.
 
 1. Sign into the [AWS console](https://aws.amazon.com/console/) and search for the EC2 service.  Amazon Elastic Compute Cloud (Amazon EC2) is a the service that your Cloud9 web server is running on, so you will need to configure the firewall in the EC2 dashboard.
 ![](images/ec2.png)
