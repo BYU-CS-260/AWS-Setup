@@ -8,7 +8,7 @@ Now you want to create a web server with Cloud9 so that your Mom can see your am
 ![](images/createenv.png)
 9. Give your environment a name (pick whatever you want, but make it meaningful).
 ![](images/nameenv.png)
-10. Configure the Cost-saving settings so that the web server will never hibernate.
+10. Configure the Cost-saving settings so that the web server will never hibernate and select "Ubuntu Server" for the platform.
 ![](images/configsettings.png)
 11. Then create the environment.  It can take several minutes to set up your server.  The system is allocating a virtual server on a real computer somewhere in the Amazon Web Services infrastructure.  You should select the "US West (N. California)" region for your server in the upper right corner of the screen.
 ![](images/docreate.png)
