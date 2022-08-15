@@ -3,12 +3,15 @@ In this tutorial we will set up [Caddy](https://caddyserver.com/), a web server 
 We will provide you with minimal instructions on how to use these systems so you arent confused, but 
 you are welcome to explore more of the features on your own if you have time.
 
-1. First install Caddy from the command line in your Cloud9 console and use systemctl to cause it to run even if your Cloud9 instance reboots.  We use the "sudo" command to indicate that this command should be run as superuser.  Normal users cant modify the system configuration, but your user has the ability to become a superuser.  But don't get too excited, your superpowers do not include leaping over tall buildings in a single bound.  ["yum"](https://access.redhat.com/solutions/9934) is a package manager that you can use to install software on your Cloud9 instance.
+1. First install Caddy from the command line in your Cloud9 console and use systemctl to cause it to run even if your Cloud9 instance reboots.  We use the "sudo" command to indicate that this command should be run as superuser.  Normal users cant modify the system configuration, but your user has the ability to become a superuser.  But don't get too excited, your superpowers do not include leaping over tall buildings in a single bound.  You are running a version of the Ubuntu Linux operating system and ["apt"](https://ubuntu.com/server/docs/package-management) is a package manager that you can use to install software on your Cloud9 instance.  Enter the following commands in your command line window (near the bottom of your browser window).
 ```
-sudo yum install caddy
-sudo systemctl enable caddy
-sudo systemctl restart caddy
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update
+sudo apt install caddy
 ```
+Your Ubuntu
 ![](images/caddyinstall.png)  
 2. By default, Caddy will serve files from the directory "/usr/share/caddy".  You can create a symbolic link to that directory with the following commands.  The "cd" command takes you to your environment directory.  This is the directory you see in the file tree in the upper left corner of your Cloud9 console.  The "chown" command will change the owner of the "/usr/share/caddy" directory to your ec2-user so you can write files to that directory.  The "ln -s" command creates a symbolic link from the public_html directory in your environment to the directory that caddy will serve. 
 ```
