@@ -9,7 +9,7 @@ nano /etc/caddy/Caddyfile
 Replace the ":80" with the URL for your web server.
 You will have to use the arrow keys to move to different lines in the "Caddyfile".
 Then use "^O" to write out the file and "^X" to exit the editor.
-![](caddyhttps.png)  
+![](images/caddyhttps.png)    
 
 2. Restart caddy to make caddy use the new configuration file
 ```
