@@ -11,7 +11,12 @@ sudo curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | 
 sudo apt update
 sudo apt install caddy
 ```
-Your Ubuntu
+Your Ubuntu machine has apache installed as the default web browser.  You will need to stop it and start caddy.
+```
+sudo systemctl stop apache2
+sudo systemctl disable apache2
+sudo systemctl restart caddy
+```
 ![](images/caddyinstall.png)  
 2. By default, Caddy will serve files from the directory "/usr/share/caddy".  You can create a symbolic link to that directory with the following commands.  The "cd" command takes you to your environment directory.  This is the directory you see in the file tree in the upper left corner of your Cloud9 console.  The "chown" command will change the owner of the "/usr/share/caddy" directory to your ec2-user so you can write files to that directory.  The "ln -s" command creates a symbolic link from the public_html directory in your environment to the directory that caddy will serve. 
 ```
