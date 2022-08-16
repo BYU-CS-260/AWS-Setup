@@ -1,4 +1,4 @@
-#HTTPS Setup
+# HTTPS Setup
 
 Once you have your web server working, you will want to run it in secure mode with HTTPS instead of HTTP.  
 To do this, you will need to modify the ```/etc/caddy/Caddyfile``` to turn on secure mode.
