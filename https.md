@@ -15,3 +15,5 @@ Then use "^O" to write out the file and "^X" to exit the editor.
 ```
 sudo systemctl restart caddy
 ```
+
+3. Now try the URL for your EC2 node using https ```https://ec2-35-86-147-34.us-west-2.compute.amazonaws.com/```
