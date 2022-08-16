@@ -4,4 +4,5 @@ During this class, you will be developing web applications that people throughou
 2. [Set up Cloud9](cloud9.md)
 3. [Configure your Firewall](firewall.md)
 3. [Configure your web server](caddy.md)
+3. [Enable https](caddyhttps.md)
 
