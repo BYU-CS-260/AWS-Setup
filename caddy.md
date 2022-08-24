@@ -18,7 +18,7 @@ sudo systemctl disable apache2
 sudo systemctl enable caddy
 sudo systemctl restart caddy
 ```
-![](images/caddyinstall.png)  
+<img src="images/caddyinstall.png" width=1000>
 2. By default, Caddy will serve files from the directory "/usr/share/caddy".  You can create a symbolic link to that directory with the following commands.  The "cd" command takes you to your environment directory.  This is the directory you see in the file tree in the upper left corner of your Cloud9 console.  The "chown" command will change the owner of the "/usr/share/caddy" directory to your ec2-user so you can write files to that directory.  The "ln -s" command creates a symbolic link from the public_html directory in your environment to the directory that caddy will serve. 
 ```
 cd ~/environment
@@ -33,14 +33,14 @@ sudo ln -s /usr/share/caddy public_html
     Hello World!
 </html>
 ```
-![](images/caddyhtml.png)
+<img src="images/caddyhtml.png" width=750>
 7. Congratulations! You now have your own website configured.  
 All you have to do is edit html pages to your public_html directory and they will be served at the URL shown for your EC2 node.  
 You can see the URL for your EC2 node by going back to the AWS console, searching for EC2 and selecting your instance.  You will see the "Public IPv4 DNS" entry for your Cloud9 instance.  
-![](images/publicdns.png) 
+<img src="images/publicdns.png" width=1000>
 8. Now paste this domain address into your web browser and change it from https to http.  You should be able to see your index.html file rendered in your browser.
-![](images/workingurl.png) 
+<img src="images/workingurl.png" width=750>
 16. You may want to look through the [Cloud9 tutorial](https://docs.aws.amazon.com/cloud9/latest/user-guide/tutorial.html) 
 to become more familiar with how Cloud9 works and how to use the dashboard.
 
-
+[Next Tutorial](https.md)
