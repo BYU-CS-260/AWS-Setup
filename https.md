@@ -8,7 +8,7 @@ nano /etc/caddy/Caddyfile
 ```
 Replace the ":80" with the URL for your web server.
 You will have to use the arrow keys to move to different lines in the "Caddyfile".
-Then use "^O" to write out the file and "^X" to exit the editor.
+Then use "^O" to write out the file and "^X" to exit the editor.  If you press "<control>O" and it opens a search bar, then you may need to modify your keybindings to not use "<control>O" for gotofile.  After you press "<control>O", it will ask you if you want to save to the ```/etc/caddy/Caddyfile```.  You should press the "<enter>" key to approve this save.
 <img src="images/caddyhttps.png" width=1000>
 2. Restart caddy to make caddy use the new configuration file.
 ```
