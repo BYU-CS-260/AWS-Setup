@@ -5,7 +5,7 @@ Now you want to create a web server with Cloud9 so that your Mom can see your am
 7. Then search for "Cloud9" in the upper left search bar.  
 <img src="images/cloud9.png" width=750>  
 8. You should select the "US West (N. California)" region for your server in the upper right corner of the screen.  
-9. Create a Cloud9 environment
+10. Create a Cloud9 environment
 <img src="images/createenv.png" width=750>
 10. Give your environment a name (pick whatever you want, but make it meaningful).
 <img src="images/nameenv.png" width=750>
