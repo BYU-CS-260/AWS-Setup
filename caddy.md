@@ -3,13 +3,13 @@ In this tutorial we will set up [Caddy](https://caddyserver.com/), a web server 
 We will provide you with minimal instructions on how to use these systems so you aren't confused, but 
 you are welcome to explore more of the features on your own if you have time.
 
-1. Start Cloud9.
+## Start Cloud9.
 
 If you don't have Cloud9 running, then navigate to Cloud9 on AWS and click "Start IDE". Inside the IDE, you will see a bash terminal at the bottom:
 
 ![command line in Cloud9 IDE](/images/bash.png)
 
-2. Using the bash terminal, install Caddy.
+## Using the bash terminal, install Caddy.
 
 We use the "sudo" command to indicate that this command should be run as superuser.  Normal users can't modify the system configuration, but your user has the ability to become a superuser.  But don't get too excited, your superpowers do not include leaping over tall buildings in a single bound.  You are running a version of the Ubuntu Linux operating system and ["apt"](https://ubuntu.com/server/docs/package-management) is a package manager that you can use to install software on your Cloud9 instance.  Enter the following commands in your command line window (near the bottom of your browser window).
 ```
@@ -20,7 +20,7 @@ sudo apt update
 sudo apt install caddy
 ```
 
-3. Setup caddy to run.
+## Setup caddy to run.
 
 We will use systemctl to tell Ubuntu it to run caddy if your Cloud9 instance reboots.  Your Ubuntu machine has apache installed as the default web browser.  These commands will stop apache, disable it from running, enable caddy to be run when your instance reboots, and then start caddy.
 ```
@@ -31,7 +31,7 @@ sudo systemctl restart caddy
 ```
 ![](images/caddyinstall.png)
 
-4. Configure caddy.
+## Configure caddy.
 
 Go back to the EC2 dashboard in AWS Management console. Then select "Instances" and click on your Instance.
 
@@ -64,13 +64,13 @@ ec2-54-186-104-251.us-west-2.compute.amazonaws.com {
 Once you have done this, then type the `ESC` or escape key, and you are out of insert mode. Then you can type `:wq` to write the file and quit vim.
 
 
-5. Restart caddy to make caddy use the new configuration file.
+## Restart caddy to make caddy use the new configuration file.
 
 ```
 sudo systemctl restart caddy
 ```
 
-6. Now you can visit your web server using the `open address` link shown in your EC2 instance, right next to where you found the host name. You should see this:
+## Now you can visit your web server using the `open address` link shown in your EC2 instance, right next to where you found the host name. You should see this:
 
 ![Caddy welcome page](/images/caddy-congrats.png)
 
