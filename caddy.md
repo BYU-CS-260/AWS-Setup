@@ -1,7 +1,10 @@
 # Setting up Caddy
+
 In this tutorial we will set up [Caddy](https://caddyserver.com/), a web server that will answer requests from web browsers.  
 We will provide you with minimal instructions on how to use these systems so you aren't confused, but 
 you are welcome to explore more of the features on your own if you have time.
+
+One of the great features of Caddy is that it will automatically serve your websites over HTTPS. Other web servers -- Apache, nginx -- can do this too, but they require separate steps and more configuration. Caddy was written by a BYU student, Matt Holt, who still leads the project.
 
 ## Start Cloud9.
 
@@ -70,7 +73,7 @@ Once you have done this, then type the `ESC` or escape key, and you are out of i
 sudo systemctl restart caddy
 ```
 
-## Now you can visit your web server using the `open address` link shown in your EC2 instance, right next to where you found the host name. You should see this:
+Now you can visit your web server using the `open address` link shown in your EC2 instance, right next to where you found the host name. You should see this:
 
 ![Caddy welcome page](/images/caddy-congrats.png)
 
