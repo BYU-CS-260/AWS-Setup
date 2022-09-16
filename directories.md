@@ -146,3 +146,6 @@ You should be able to see:
 
 ![hello world web page](/images/hello-world.png)
 
+## Done
+
+You're done! Congratulations on learning how to setup a web server on an EC2 instance using Cloud9. :-)
