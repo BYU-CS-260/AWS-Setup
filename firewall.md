@@ -7,7 +7,8 @@ We are going to open the following ports:
 
 - 80 -- this allows HTTP traffic to come to your machine
 - 443 -- this allow HTTPS traffic to come to your machine
-- 3000 -- this allows traffic on port 3000, which we will use for development purposes
+- 3000-3010 -- this allows traffic on port 3000-3010, which we will use for development purposes
+- 8080 -- React will use this port
 
 ## Access the EC2 dashboard
 
@@ -54,7 +55,7 @@ Add a rule with:
 Add a rule with:
 
 * Change `Type` to HTTPS (for port 443)
-* Change the `Source` to Anywhere-IPv4`
+* Change the `Source` to Anywhere-IPv6`
 
 ## Add rules for port 3000-3010
 
@@ -68,11 +69,18 @@ Add a rule with:
 
 * Change `Type` to Custom TCP
 * Change Port Range to 3000-3010
-* Change the `Source` to Anywhere-IPv4`
+* Change the `Source` to Anywhere-IPv6`
+
+## Add rules for port 8080
 
 Add a rule with:
 
 * Change `Type` to Custom TCP
 * Change Port Range to 8080
 * Change the `Source` to Anywhere-IPv4`
+
+* Change `Type` to Custom TCP
+* Change Port Range to 8080
+* Change the `Source` to Anywhere-IPv6`
+
 [Next Tutorial](caddy.md)
