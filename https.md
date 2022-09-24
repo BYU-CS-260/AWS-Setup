@@ -27,8 +27,8 @@ ec2-54-186-104-251.us-west-2.compute.amazonaws.com {
         root * /usr/share/caddy
 ```
 
-3. Exit nano by pressing the <Control> and the O key at the same time to save out the file.  Press the <return> key to accept the file name to save to.
-Then press the <Control> and the X key at the same time to exit the nano eitor.
+3. Exit nano by pressing the "Control" and the "O" key at the same time to save out the file.  Press the <return> key to accept the file name to save to.
+Then press the "Control" and the "X" key at the same time to exit the nano eitor.
 
 4. Restart caddy to make caddy use the new configuration file.
 
