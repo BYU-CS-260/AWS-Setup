@@ -40,22 +40,12 @@ Click the `Edit inbound rules` button and then the `Add rule` button at the bott
   
 This allows anyone to connect to your server form anywhere on the Internet, using IPv4.
 
-Some of you may connect from home using an IPv6 address. So do this entire process again, adding a second rule that has:
-
-* Change the `Type` to HTTP (for port 80)
-* Change the `Source` to Anywhere-IPv6`
-
 ## Add rules for port 443
 
 Add a rule with:
 
 * Change `Type` to HTTPS (for port 443)
 * Change the `Source` to Anywhere-IPv4`
-
-Add a rule with:
-
-* Change `Type` to HTTPS (for port 443)
-* Change the `Source` to Anywhere-IPv6`
 
 ## Add rules for port 3000-3010
 
@@ -65,12 +55,6 @@ Add a rule with:
 * Change Port Range to 3000-3010
 * Change the `Source` to Anywhere-IPv4`
 
-Add a rule with:
-
-* Change `Type` to Custom TCP
-* Change Port Range to 3000-3010
-* Change the `Source` to Anywhere-IPv6`
-
 ## Add rules for port 8080
 
 Add a rule with:
@@ -78,9 +62,5 @@ Add a rule with:
 * Change `Type` to Custom TCP
 * Change Port Range to 8080
 * Change the `Source` to Anywhere-IPv4`
-
-* Change `Type` to Custom TCP
-* Change Port Range to 8080
-* Change the `Source` to Anywhere-IPv6`
 
 [Next Tutorial](caddy.md)
