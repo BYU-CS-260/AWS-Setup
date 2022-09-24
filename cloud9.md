@@ -13,11 +13,13 @@ Then search for "Cloud9" in the upper left search bar.
 ## Create a Cloud9 IDE
 
 Click Create a Cloud9 environment
+
 <img src="images/createenv.png" width=750>
 
 **Be sure to should select the "US West (N. California)" region for your server in the upper right corner of the screen.**
 
 Then give your environment a name (pick whatever you want, but make it meaningful).
+
 <img src="images/nameenv.png" width=750>
 
 ## Configure settings
