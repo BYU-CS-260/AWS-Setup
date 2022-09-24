@@ -38,7 +38,7 @@ sudo systemctl restart caddy
 
 When caddy sees this new configuration, with a hostname specified, it is now able to automatically request and configure a certificate for your website sot that it can serve files using HTTPS. This provides encryption between the web browser and your web server, so that any information anyone sends to your website, such as a password or a credit card, is encrypted when it is sent to your server.
 
-Now you can visit your web server using the `open address` link shown in your EC2 instance, right next to where you found the host name. You should see your "Hello World" web page.
+5. Now you can visit your web server using the `open address` link shown in your EC2 instance, right next to where you found the host name. You should see your "Hello World" web page.
 
 And you should see a lock icon in the browser window. (Note, some browsers are instead showing _nothing_ when the website is secure, and `Not Secure` when it is not secure. So check to see what your browser does for secure sites.)
 It may take a while for Caddy to set up a certificate to allow for secure connections, so be patient.
