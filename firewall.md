@@ -54,21 +54,25 @@ Add a rule with:
 Add a rule with:
 
 * Change `Type` to HTTPS (for port 443)
-* Change the `Source` to Anywhere-IPv6`
+* Change the `Source` to Anywhere-IPv4`
 
-## Add rules for port 3000
+## Add rules for port 3000-3010
 
 Add a rule with:
 
 * Change `Type` to Custom TCP
-* Change Port Range to 3000
+* Change Port Range to 3000-3010
 * Change the `Source` to Anywhere-IPv4`
 
 Add a rule with:
 
 * Change `Type` to Custom TCP
-* Change Port Range to 3000
-* Change the `Source` to Anywhere-IPv6`
+* Change Port Range to 3000-3010
+* Change the `Source` to Anywhere-IPv4`
 
+Add a rule with:
 
+* Change `Type` to Custom TCP
+* Change Port Range to 8080
+* Change the `Source` to Anywhere-IPv4`
 [Next Tutorial](caddy.md)
