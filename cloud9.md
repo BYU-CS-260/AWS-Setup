@@ -24,7 +24,7 @@ Then give your environment a name (pick whatever you want, but make it meaningfu
 
 ## Configure settings
 
-Use the defaults for an EC2 instance (direct access) and a t3.small instance type.
+Use the defaults for an EC2 instance (direct access) and a t3.small instance type.  You may acrue charges with this level of processor.  If you want to stay in the free tier, select t3.micro.
 
 **Be sure to select `Ubuntu Server` for the platform.**
 
