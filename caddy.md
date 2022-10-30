@@ -51,4 +51,10 @@ You can see the URL for your EC2 node by going back to the AWS console, searchin
 9. You may want to look through the [Cloud9 tutorial](https://docs.aws.amazon.com/cloud9/latest/user-guide/tutorial.html) 
 to become more familiar with how Cloud9 works and how to use the dashboard.
 
+10. If you have trouble with Caddy, you can use the following commands to get status and reload the configuration file
+```
+systemctl status caddy
+sudo systemctl reload caddy
+```
+
 [Next Tutorial](https.md)
