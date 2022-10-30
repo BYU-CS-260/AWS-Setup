@@ -36,7 +36,7 @@ Then press the "Control" and the "X" key at the same time to exit the nano eitor
 sudo systemctl restart caddy
 ```
 
-When caddy sees this new configuration, with a hostname specified, it is now able to automatically request and configure a certificate for your website sot that it can serve files using HTTPS. This provides encryption between the web browser and your web server, so that any information anyone sends to your website, such as a password or a credit card, is encrypted when it is sent to your server.
+When caddy sees this new configuration, with a hostname specified, it is now able to automatically request and configure a certificate for your website sot that it can serve files using HTTPS. This provides encryption between the web browser and your web server, so that any information anyone sends to your website, such as a password or a credit card, is encrypted when it is sent to your server.  This step may take a while.  Caddy has to request a certificate for your domain.  If you cant seem to get the https to work after an hour or so, you can try spinning up a new instance and deleting this one.
 
 5. Now you can visit your web server using the `open address` link shown in your EC2 instance, right next to where you found the host name. You should see your "Hello World" web page.
 
