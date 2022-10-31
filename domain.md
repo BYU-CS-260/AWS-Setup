@@ -49,7 +49,7 @@ Go back to your Route53 dashboard and select "Hosted zones"
 
 9. In another tab, go to your EC2 Dashboard and copy the public IPV4 Address
 
-![](images/publicIPV4.png)
+![](images/publicIPv4.png)
 
 10. Paste your public IPV4 address into the A record. 
 I recommend a TTL (Time To Live) of 60 seconds so you can make changes and have them appear quickly.
