@@ -45,5 +45,7 @@ When caddy sees this new configuration, with a hostname specified, it is now abl
 And you should see a lock icon in the browser window. (Note, some browsers are instead showing _nothing_ when the website is secure, and `Not Secure` when it is not secure. So check to see what your browser does for secure sites.)
 It may take a while for Caddy to set up a certificate to allow for secure connections, so be patient.
 
+If you have trouble with this, then put the ":80" back into the Caddyfile and you can use HTTP to access your pages.  Talk to a TA or the instructor to figure out how to make things work.
+
 
 
