@@ -40,5 +40,9 @@ We successfully registered the markclement.net domain. We also created a hosted 
 Your next step is to add records to the hosted zone. These records contain information about how to route traffic for your domain and any subdomains. To learn how to add records to your hosted zone, see Working with Records.
 ```
 
-Go back to your Route53 dashboard and select "hosted zones"
+Go back to your Route53 dashboard and select "Hosted zones"
 ![](images/hosted.png) 
+
+8. Select your domain and press "Create Record"
+
+![](images/createrecord.png) 
