@@ -1,20 +1,10 @@
 # Setting up HTTPS 
 
-In this tutorial, we will configure Caddy to use https to serve files from your public_html directory. You may be able to use the domain provided to you by AWS, but if it does not work the first time, it is because the service that provides certificates ([Let's Encrypt](https://letsencrypt.org/)) doesn't want to give you a certificate for an AWS domain.  If this happens, get your own [domain](domain.md) first.
+In this tutorial, we will configure Caddy to use https to serve files from your public_html directory. 
+You should wait to perform this step until you have received notification that your domain has been set up.
+You can continue to use http://IPV4_address until your [domain](domain.md) is provisioned.
 
-1. Go back to the EC2 dashboard in AWS Management console. Then select "Instances" and click on your Instance.
-
-Next, find the host name for your EC2 instance -- it is labeled "Public IPv4 DNS".
-
-![](images/publicdns.png) 
-
-For example, my host name is `ec2-54-186-104-251.us-west-2.compute.amazonaws.com`.
-
-Once you know this host name, you can edit `/etc/caddy/Caddyfile` so that it uses this host name.
-
-If you have created a domain using Route53, use this domain.  The ec2-X-X-X-X domains sometimes dont work with Caddy, you should follow the [instructions](domain.md) to create a domain if you have trouble.  I created a domain "markclement.net", so I will use that with Caddy.
-
-2. Edit the file using the nano editor by running the following command from the command line.
+1. Edit the `/etc/caddy/Caddyfile` so that it uses this Route53 Domain Name.
 
 ```
 sudo nano /etc/caddy/Caddyfile
