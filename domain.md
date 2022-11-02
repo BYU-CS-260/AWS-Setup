@@ -57,4 +57,8 @@ Then select "Create Records".  You should see the A record with your IP address 
 
 ![](images/quickCreate.png)
 
-11. You should now be able to use your domain in your Caddy configuration file and Caddy will generate a certificate for you.
+11. Now create another A record with */domain_name.  This will direct subdomains to your EC2 node.
+
+![](images/subdomains.png)
+
+13. You should now be able to use your domain in your Caddy configuration file and Caddy will generate a certificate for you.
