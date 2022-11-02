@@ -3,7 +3,7 @@ During this class, you will be developing web applications that people throughou
 1. [Set up your AWS account](AWS.md)
 2. [Set up Cloud9](cloud9.md)
 3. [Configure your Firewall](firewall.md)
-4. [Create your domain] (domain.md)
+4. [Create your domain](domain.md)
 3. [Configure your web server](caddy.md)
 3. [Enable https](https.md)
 
