@@ -57,7 +57,7 @@ Then select "Create Records".  You should see the A record with your IP address 
 
 ![](images/quickCreate.png)
 
-11. Now create another A record with */domain_name.  This will direct subdomains to your EC2 node.
+11. Now create another A record with *.domain_name.  This will direct subdomains to your EC2 node.
 
 ![](images/subdomains.png)
 
