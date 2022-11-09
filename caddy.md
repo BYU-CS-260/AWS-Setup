@@ -44,7 +44,7 @@ sudo ln -s /usr/share/caddy public_html
 All you have to do is edit html pages to your public_html directory and they will be served at the URL shown for your EC2 node.  
 You can see the URL for your EC2 node by going back to the AWS console, searching for EC2 and selecting your instance.  You will see the "Public IPv4 DNS" entry for your Cloud9 instance.  
 ![](images/publicdns.png) 
-8. Now paste this domain address into your web browser and change it from https to http.  You should be able to see your index.html file rendered in your browser.
+8. Now paste use the domain you created in Route53 to set up https.  You should be able to see your index.html file rendered in your browser.
 
 <img src="images/workingurl.png" width=500>
 
