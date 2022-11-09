@@ -24,7 +24,7 @@ Then give your environment a name (pick whatever you want, but make it meaningfu
 
 ## Configure settings
 
-Use the defaults for an EC2 instance (direct access) and a t3.micro instance type.  The t3.micro is part of the free tier.  If you want to make sure you dont run out of memory or CPU, select t3.small.  If you want to understand charges, you can watch this [video](https://youtu.be/_CWKK0sypkE).
+Use the defaults for an EC2 instance (direct access) and a t3.small instance type.  If you want to understand charges, you can watch this [video](https://youtu.be/_CWKK0sypkE).
 
 **Be sure to select `Ubuntu Server` for the platform.**
 
