@@ -36,6 +36,34 @@ And you should see a lock icon in the browser window. (Note, some browsers are i
 It may take a while for Caddy to set up a certificate to allow for secure connections, so be patient.
 
 If you have trouble with this, then put the ":80" back into the Caddyfile and you can use HTTP to access your pages.  Talk to a TA or the instructor to figure out how to make things work.
+6. You can also set up a proxy that will have Caddy serve content from other servers on your computer.  And you can set up a subdomain using the following syntax in your /etc/caddy/Caddyfile
+```
+markclement.net {
+        # Set this path to your site's directory.
+        root * /usr/share/caddy
+
+        # Enable the static file server.
+        file_server
+
+        # Another common task is to set up a reverse proxy:
+        # reverse_proxy localhost:8080
+        handle /api/* {
+                reverse_proxy localhost:3000
+        }
+
+        # Or serve a PHP site through php-fpm:
+        # php_fastcgi localhost:9000
+}
+
+# Set up a subdomain
+creative3.markclement.net {
+        # Set this path to your site's directory.
+         root * /var/www/html
+        #
+        # Enable the static file server.
+        file_server
+}
+```
 
 
 
