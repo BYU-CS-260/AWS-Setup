@@ -30,7 +30,7 @@ Use the defaults for an EC2 instance (direct access) and a t3.small instance typ
 
 Configure the `Cost-saving settings` so that the web server will never hibernate.
 
-<img src="images/configt3.png" width=750>
+<img src="images/configt3small.png" width=750>
 
 Then click `Next Step` to setup the environment.
 
